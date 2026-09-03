@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JAH IA Tecnologias</title>
-<meta name="description" content="JAH IA TECNOLOGIAS LTDA — empresa brasileira de desenvolvimento de software, em São Paulo. Fazemos o Duda, aplicativo de tarefas domésticas para famílias.">
+<meta name="description" content="Empresa de software em São Paulo. Construímos e operamos nossos próprios produtos.">
 <link rel="canonical" href="https://jahias.com/">
 <meta property="og:title" content="JAH IA Tecnologias">
-<meta property="og:description" content="Empresa brasileira de desenvolvimento de software, em São Paulo. Fazemos o Duda.">
+<meta property="og:description" content="Empresa de software em São Paulo. Construímos e operamos nossos próprios produtos.">
 <meta property="og:url" content="https://jahias.com/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
+<link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -44,130 +45,87 @@
   }
 }
 </script>
-<style>
-  :root{
-    --bg:#fdfbf6; --panel:#fff; --ink:#1b1a16; --muted:#5f5c52;
-    --line:#e8e3d7; --green:#2f8f5b; --yellow:#f2b307; --link:#237a4c;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#14140f; --panel:#1c1c16; --ink:#f3f1e9; --muted:#a8a496;
-      --line:#2f2e26; --green:#5cc98a; --yellow:#f5c53d; --link:#6fd39a;
-    }
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font:16px/1.68 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:740px;margin:0 auto;padding:0 24px}
-  header{border-bottom:1px solid var(--line);padding:26px 0;background:var(--panel)}
-  header .wrap{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-  .mark{font-weight:700;letter-spacing:-.02em;font-size:19px}
-  .mark b{color:var(--green);font-weight:700}
-  .tag{color:var(--muted);font-size:13.5px}
-  h1{
-    font-size:clamp(28px,5vw,40px);line-height:1.16;letter-spacing:-.025em;
-    margin:60px 0 20px;font-weight:680;
-  }
-  h1 em{
-    font-style:normal;
-    background:linear-gradient(transparent 62%,var(--yellow) 62%,var(--yellow) 92%,transparent 92%);
-  }
-  h2{
-    font-size:13.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);
-    margin:56px 0 16px;font-weight:650;
-  }
-  .lede{font-size:18.5px;color:var(--muted);margin:0;max-width:58ch}
-  p{max-width:64ch}
-  a{color:var(--link)}
-  .card{
-    background:var(--panel);border:1px solid var(--line);border-radius:16px;
-    padding:24px 26px;margin:0;
-  }
-  .card h3{margin:0 0 8px;font-size:18px;letter-spacing:-.01em;display:flex;align-items:center;gap:9px}
-  .dot{width:9px;height:9px;border-radius:50%;background:var(--yellow);flex:none}
-  .card p{margin:0;color:var(--muted);font-size:15.5px}
-  .card .more{display:inline-block;margin-top:14px;font-size:15px;font-weight:550}
-  dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 24px;font-size:15px}
-  dt{color:var(--muted);white-space:nowrap}
-  dd{margin:0}
-  address{font-style:normal}
-  footer{
-    border-top:3px solid var(--green);margin-top:68px;padding:26px 0 56px;
-    color:var(--muted);font-size:13.5px;
-  }
-  @media (max-width:520px){ dl{grid-template-columns:1fr;gap:2px 0} dt{margin-top:12px} }
-</style>
 </head>
 <body>
-
-<header>
+<header class="site-head">
   <div class="wrap">
-    <div class="mark">JAH <b>IA</b> Tecnologias</div>
-    <div class="tag">São Paulo, Brasil</div>
+    <a class="brand" href="/">JAH <b>IA</b> Tecnologias</a>
+    <nav class="nav">
+      <a href="/" class="active">Início</a>
+      <a href="/produtos/">Produtos</a>
+      <a href="/empresa/">Empresa</a>
+      <a href="/contato/">Contato</a>
+    </nav>
   </div>
 </header>
-
 <main class="wrap">
-
-  <h1>Software para a <em>rotina da família</em>.</h1>
-  <p class="lede">
-    A JAH IA Tecnologias desenvolve software em São Paulo. Criamos e operamos
-    nossos próprios produtos.
-  </p>
-
-  <h2>O que fazemos</h2>
-  <p>
-    Fazemos aplicativos para organizar a casa e a rotina de quem mora nela, na
-    web e no celular. O desenvolvimento, a infraestrutura e o suporte ficam com
-    a gente, em português.
-  </p>
-
-  <h2>Produtos</h2>
-  <div class="card">
-    <h3><span class="dot"></span>Duda</h3>
-    <p>
-      Aplicativo de tarefas domésticas para famílias com crianças. Divide as
-      tarefas da casa, acompanha o que foi combinado e conversa com pais e
-      filhos pelo celular. Está no ar na web. O app para iOS está em
-      desenvolvimento.
+  <div class="phead">
+    <h1>Construímos e operamos nossos próprios produtos.</h1>
+    <p class="lede">
+      A JAH IA Tecnologias é uma empresa de software em São Paulo.
+      O Duda é o nosso primeiro produto.
     </p>
-    <a class="more" href="https://www.ajudaduda.com">ajudaduda.com &rarr;</a>
   </div>
 
-  <h2>Contato</h2>
-  <p>
-    Assuntos comerciais, jurídicos e de imprensa:
-    <a href="mailto:contato@jahias.com">contato@jahias.com</a>.<br>
-    Suporte ao Duda: <a href="mailto:support@ajudaduda.com">support@ajudaduda.com</a>.<br>
-    Privacidade e proteção de dados: <a href="mailto:dpo@ajudaduda.com">dpo@ajudaduda.com</a>.
-  </p>
+  <section class="row">
+    <h2>O que fazemos</h2>
+    <div>
+      <p>
+        Desenvolvemos aplicativos para web e celular. Cuidamos do produto
+        inteiro: o código, a infraestrutura que mantém tudo no ar e o
+        atendimento a quem usa.
+      </p>
+      <p>
+        Não prestamos serviço para terceiros. O que construímos, construímos
+        para nós.
+      </p>
+    </div>
+  </section>
 
-  <h2>Identificação da empresa</h2>
-  <dl>
-    <dt>Razão social</dt><dd>JAH IA TECNOLOGIAS LTDA</dd>
-    <dt>CNPJ</dt><dd>68.591.678/0001-20</dd>
-    <dt>Natureza jurídica</dt><dd>Sociedade Empresária Limitada</dd>
-    <dt>Constituição</dt><dd>12 de agosto de 2026</dd>
-    <dt>Endereço</dt>
-    <dd>
-      <address>
-        Avenida Paulista, 1471, Conjunto 1110<br>
-        Bela Vista, São Paulo &mdash; SP<br>
-        CEP 01311-927, Brasil
-      </address>
-    </dd>
-  </dl>
+  <section class="row">
+    <h2>Produtos</h2>
+    <div>
+      <div class="prod">
+        <h3>Duda</h3>
+        <p class="status">Web no ar · aplicativo para iOS em desenvolvimento</p>
+        <p>
+          Organiza as tarefas domésticas de famílias com crianças. Divide o que
+          precisa ser feito, acompanha o que foi combinado e conversa com pais e
+          filhos pelo celular.
+        </p>
+        <a href="/produtos/">Sobre o Duda &rarr;</a>
+      </div>
+    </div>
+  </section>
 
+  <section class="row">
+    <h2>Onde estamos</h2>
+    <div>
+      <p>
+        Empresa brasileira, sediada em São Paulo. Nossos produtos são feitos em
+        português, para quem mora no Brasil.
+      </p>
+    </div>
+  </section>
 </main>
-
-<footer>
+<footer class="site-foot">
   <div class="wrap">
-    &copy; 2026 JAH IA TECNOLOGIAS LTDA &middot; CNPJ 68.591.678/0001-20 &middot; São Paulo, SP, Brasil
+    <div class="foot-grid">
+      <address class="legal">
+        <span class="rs">JAH IA Tecnologias Ltda.</span><br>
+        CNPJ 68.591.678/0001-20<br>
+        Av. Paulista, 1471, cj. 1110, Bela Vista<br>
+        São Paulo/SP, CEP 01311-927
+      </address>
+      <nav class="foot-nav">
+        <a href="/produtos/">Produtos</a>
+        <a href="/empresa/">Empresa</a>
+        <a href="/contato/">Contato</a>
+        <a href="https://www.ajudaduda.com">ajudaduda.com</a>
+      </nav>
+    </div>
+    <div class="copy">© 2026 JAH IA Tecnologias Ltda.</div>
   </div>
 </footer>
-
 </body>
 </html>
