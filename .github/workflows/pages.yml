@@ -19,12 +19,16 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    # Never GitHub-hosted (2026-10-25: the Actions budget is spent); CT 235 misc-ci.
+    runs-on: [self-hosted, misc-ci]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      # The one accepted use of GitHub artifact storage (2026-10-25): Pages can
+      # only publish from it. Keep it to the minimum: one day.
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
+          retention-days: 1
       - id: deployment
         uses: actions/deploy-pages@v4
